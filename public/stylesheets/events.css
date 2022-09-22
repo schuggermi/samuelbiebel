@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,800;1,600&display=swap');
+
+.events__wrapper {
+  /* align-self: flex-start; */
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+}
+
+.events__wrapper__item {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.events__title {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.8);
+  padding-bottom: 0.3rem;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.events__flyer {
+  max-width: 30vw;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  align-self: center;
+  filter: grayscale(25%);
+}
+
+.events__flyer:hover {
+  filter: grayscale(0);
+  transform: scale(1.02);
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.events__finished {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  z-index: 0;
+  color: #ff6348;
+  font-size: calc(0.9rem + 1vw);
+}
+
+@media (min-width: 576px) {
+  /* .events__finished {
+    top: 10%;
+  } */
+}
+
+@media (min-width: 768px) {
+  /* .events__finished {
+    top: 8%;
+  } */
+}
+
+@media (min-width: 992px) {
+  .events__flyer {
+    max-width: 20vw;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+  }
+
+  /* .events__finished {
+    top: 9%;
+  } */
+}
+
+@media (min-width: 1400px) {
+  /* .events__finished {
+    top: 8%;
+  } */
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,800;1,600&display=swap');
+
+.navbar__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0.8rem;
+  background: rgba(100, 100, 100, 0.075);
+}
+
+.navbar__container {
+  padding-bottom: 2rem;
+}
+
+.navbar__sociallist {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 4rem !important;
+}
+
+.navbar__instagram {
+  font-size: 4rem !important;
+  padding-right: 0.3rem;
+  cursor: pointer;
+}
+
+.navbar__list {
+  position: sticky;
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0.3rem 0 0.3rem 0;
+  margin: 0;
+  background-image: url("../images/styles/mindcircles.gif");
+  background-position: center 85%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: invert(5%);
+  filter: contrast(90%);
+  filter:brightness(105%);
+}
+
+.navbar__toggler {
+  display: none;
+  padding-left: 0.5rem;
+}
+
+.logo {
+  max-width: 90px;
+  min-width: 50px;
+  width: 120px;
+}
+
+.navbar__wrapper__item {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.navbar__list__item__link:hover {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid currentColor;
+}
+
+.active {
+  color: #ff6348;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  .navbar__list {
+    display: flex;
+  }
+
+  .navbar__list {
+    background-size: cover;
+  }
+}

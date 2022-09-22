@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,800;1,600&display=swap');
+
+.medicationandaddiction__wrapper {
+  max-width: 100%;
+}
+
+.galery__header--medicationandaddiction {
+  display: grid;
+  grid-template-columns: 85%;
+  justify-content: center;
+  margin: 2rem auto 6rem auto;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.galery__header--medicationandaddiction--img {
+  width: 95%;
+  margin: 0 auto;
+  opacity: 0.5;
+  border-radius: 0.5rem;
+  filter: blur(0.08rem);
+}
+
+.galery__header--medicationandaddiction--btn {
+  display: block;
+  margin: 0 auto;
+  font-weight: 900 !important;
+  font-size: calc(0.275rem + 1vw) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.galery__header--medicationandaddiction--btn:hover {
+  font-weight: 300;
+}
+
+.galery__wrapper {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-column-gap: 5rem;
+  align-self: center;
+  align-items: center;
+}
+
+.galery__wrapper--medicationandaddiction {
+  min-height: 100%;
+}
+
+.picture__wrapper {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-row-gap: 5rem;
+  grid-column-gap: 5rem;
+  align-self: center;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+.galery__wrapper__item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* GALERY SERIES */
+.galery__item {
+  width: 40vw;
+  height: 40vw;
+  max-width: 40vw;
+  max-height: 40vw;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  position: relative;
+  border: 0.2rem solid rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  filter: grayscale(50%);
+  opacity: 0.7;
+  transition: display ease-in 1s;
+}
+
+.galery__item:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* .galery__image {
+  width: 70vw;
+  border-radius: 50%;
+  opacity: 0.5;
+} */
+
+.galery__item__title {
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: calc(1.4rem + 1vw);
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.picture__card {
+  overflow: hidden;
+  background: rgba(245, 245, 245, 0.6);
+  border: 0.1rem solid rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+}
+
+.picture__card__item {
+  font-size: calc(0.90rem + 1vw);
+  font-weight: 300;
+  word-spacing: -0.1rem;
+}
+
+.picture__card__image {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  min-width: 0;
+  min-height: 0;
+  width: auto;
+  height: auto;
+  max-width: 80vw;
+  max-height: 80vw;
+
+}
+
+.picture__card__title {
+  align-self: center;
+  text-decoration: underline;
+  font-size: calc(1.2rem + 1vw);
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.picture__card__cite {
+  font-size: calc(0.55rem + 1vw);
+  font-weight: 250;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.picture__card__footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.picture__card__text__toggler {
+  display: block;
+  font-size: calc(0.60rem + 1vw);
+  margin-top: 0.5rem;
+  cursor: pointer;
+  color: rgba(69, 170, 242,1.0);
+}
+
+.picture__card__text {
+  margin-top: 1rem;
+  display: none;
+  transition: display 1s;
+  font-size: calc(0.675rem + 1vw);
+  font-weight: 200;
+}
+
+.picture__card__btn {
+  display: block;
+  align-self: flex-end;
+  margin-right: 1rem;
+}
+
+.sold {
+  color: rgba(235, 77, 75, 1.0);
+}
+
+.katalog {
+  color: rgba(46, 213, 115, 1.0);
+}
+
+@media (min-width: 576px) {
+  .series__announcement {
+    display: none;
+  }
+
+  .galery__item {
+    width: 25vw;
+    height: 25vw;
+    max-width: 25vw;
+    max-height: 25vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .galery__header--medicationandaddiction--img {
+    width: 85%;
+  }
+
+  .galery__header--medicationandaddiction--btn {
+    font-size: calc(0.975rem + 1vw);
+  }
+
+  .galery__wrapper {
+    grid-template-columns: 100%;
+    grid-column-gap: 10rem;
+  }
+
+  .picture__wrapper {
+    grid-template-columns: 40% 40%;
+  }
+
+  .picture__card__item {
+    font-size: calc(0.60rem + 1vw);
+  }
+
+  .picture__card__title {
+    font-size: calc(0.8rem + 1vw);
+  }
+
+  .picture__card__cite {
+    font-size: calc(0.35rem + 1vw);
+  }
+
+  .picture__card__image {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+}
+
+@media (min-width: 992px) {
+  /* .galery__header--medicationandaddiction {
+    width: 70%;
+  } */
+
+  .picture__wrapper {
+    grid-template-columns: 34.5% 34.5%;
+    grid-column-gap: 10rem;
+  }
+
+  .galery__item {
+    width: 20vw;
+    height: 20vw;
+    max-width: 20vw;
+    max-height: 20vw;
+    border-radius: 50%;
+  }
+
+  /* .galery__item {
+    width: 18vw;
+    height: 18vw;
+    max-width: 18vw;
+    max-height: 18vw;
+    border-radius: 50%;
+  } */
+
+  .picture__card__item {
+    font-size: calc(0.40rem + 1vw);
+  }
+
+  .picture__card__title {
+    font-size: calc(0.9rem + 1vw);
+  }
+
+  .picture__card__cite {
+    font-size: calc(0.15rem + 1vw);
+  }
+
+  .picture__card__text__toggler {
+    font-size: calc(0.40rem + 1vw);
+  }
+
+  /* .picture__card__text {
+    font-size: calc(0.05rem + 1vw);
+  } */
+}

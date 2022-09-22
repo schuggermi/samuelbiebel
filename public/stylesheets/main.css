@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+/* @media (min-width: 576px) { ... }
+@media (min-width: 768px) { ... }
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+@media (min-width: 1400px) { ... }  */
+
+@import url("main.css");
+@import url("navbar.css");
+@import url("carousel.css");
+@import url("events.css");
+@import url("eventscarousel.css");
+@import url("galery.css");
+@import url("aboutme.css");
+@import url("main.css");
+@import url("contact.css");
+@import url("impressum.css");
+@import url("lightbox.css");
+@import url("footer.css");
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(100, 100, 100, 0.075);
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: url('../images/styles/pills.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: calc(0.475em + 1vw);
+  font-weight: 600;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, rgba(250,250,250, 0.8) 0%, rgba(255,255,255,0.2) 85%, rgba(255,255,255,0.1) 80%, rgba(100, 100, 100, 0.25) 100%);
+}
+
+.flex__wrapper {
+  display: flex;
+  /* min-height: 100vh; */
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+a, p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+small {
+  margin: 0;
+  word-spacing: -0.08rem;
+  line-height: -1.2rem;
+}
+
+input, textarea {
+  outline: 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 1.2rem 0.5rem 1.5rem;
+  border-radius: 3rem;
+  align-items: center;
+  /* font-size: calc(0.8rem + 1vw); */
+  font-family: 'Fira Sans', sans-serif;
+}
+
+input:hover, textarea:hover,
+input:active, textarea:active {
+  outline: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.body__overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(245, 245, 245, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.textshadow {
+  text-shadow: 0.015rem 0.015rem 0.06rem rgba(0, 0, 0, 0.8);
+}
+
+.textshadow--light{
+  text-shadow: 0.015rem 0.015rem 0.06rem rgba(255, 255, 255, 0.8);
+}
+
+.dropshadow {
+  filter: drop-shadow(0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.5));
+}
+
+.boxshadow {
+  filter: drop-shadow(0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.8));
+}
+
+.hover:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 0.3s;
+}
+
+.btn {
+  padding: 0.6rem 1.8rem;
+  border-radius: 3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.8);
+  font-size: calc(0.675rem + 1vw);
+  font-weight: 300;
+  background-color: transparent;
+  cursor: pointer;
+}

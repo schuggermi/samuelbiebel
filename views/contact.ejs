@@ -1,0 +1,36 @@
+<%- include("assets/header.ejs"); %>
+<%- include("assets/navbar.ejs"); %>
+
+<div class="contact__wrapper">
+  <h3 class="contact__title">Nehmen Sie Kontakt mit mir auf</h3>
+  <form class="contact__form" method="post">
+    <input class="contact__input" type="text" name="contactFirstName" placeholder="Ihr Vorname"><br>
+    <input  class="contact__input" type="text" name="contactLastName" placeholder="Ihr Nachname"><br>
+    <input  class="contact__input" type="email" name="contactEmail" placeholder="Ihre E-Mail-Adresse"><br>
+    <textarea  class="contact__input" type="text" name="contactMessage" placeholder="Ihre Nachricht an mich"></textarea><br>
+    <div class="contact__checkbox__wrapper">
+      <label class="contact__checkbox__label" for="contactDsgvo">Mit Absenden des Formulars stimmen Sie unseren <a class="contact__checkbox__label__link" style="text-decoration: underline;" target="_blank" href="/impressum#dsgvo__contactform">Datenschutzbestimmungen</a> zu</label>
+      <input class="contact__checkbox" type="checkbox" name="contactDsgvo">
+    </div>
+    <p class="contact__warning" style="display: none;"><small>Dies ist eine Fehlermeldung.</small></p>
+    <div class="contact__button">
+      <a class="contact__submit btn" href="#">Nachricht senden</a>
+    </div>
+  </form>
+
+  <div class="donation__wrapper" id="pill__donation">
+    <img class="donation__pillman" src="../images/styles/pillman.gif" alt="Nehmen Sie Kontakt mit mir auf.">
+
+    <div class="donation__content">
+      <h3 class="donation__title">Sie haben abgelaufene oder nicht verwendete Medikamente? Können Sie diese gerne für weitere Projekte spenden.</h3>
+
+      <ul class="donation__adress">
+        <li class="donation__adress__item ">Samuel Biebel</li>
+        <li class="donation__adress__item">Postfach 19 02 21</li>
+        <li class="donation__adress__item">Frankfurt 60089</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<%- include("assets/footer.ejs"); %>

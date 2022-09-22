@@ -1,0 +1,15 @@
+.grid__container {
+  display: grid;
+  grid-template-columns: 90vw;
+  grid-template-rows: auto;
+  grid-row-gap: 5rem;
+  grid-column-gap: 10rem;
+  align-self: center;
+  justify-content: center;
+}
+
+.grid__container__item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}

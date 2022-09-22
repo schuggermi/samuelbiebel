@@ -1,0 +1,59 @@
+.lightbox__image {
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 0.5rem;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+.lightbox__image__event {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 0.5rem;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+@media (min-width: 576px) {
+  .lightbox__image {
+    width: 75%;
+  }
+
+  .lightbox__image__event {
+    width: 65%;
+  }
+}
+
+@media (min-width: 768px) {
+  .lightbox__image {
+    width: 65%;
+  }
+
+  .lightbox__image__event {
+    width: 55%;
+  }
+}
+
+@media (min-width: 992px) {
+  .lightbox__image {
+    width: 55%;
+  }
+
+  .lightbox__image__event {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lightbox__image {
+    width: 40%;
+  }
+
+  .lightbox__image__event {
+    width: 25%;
+  }
+}
